@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>데이터 분석 결과</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+    <h1>데이터 분석 결과</h1>
+    <h2>요약 통계</h2>
+    <div>
+        {% for table in tables %}
+            {{ table|safe }}
+        {% endfor %}
+    </div>
+</body>
+</html>
